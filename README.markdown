@@ -8,8 +8,8 @@ It is written in ruby, so it can be easily installed in the system as a ruby gem
 However, to manage dependencies, we also install bundler using `gem install bundler`.
 
 ---
-**NOTE:** 
-You can combine the above two steps as gem install bundler jekyll
+**NOTE:**  
+You can combine the above two steps as `gem install bundler jekyll`
 ---
 
 Jekyll server can be run as simple as `jekyll serve`. However, if you have multiple versions of jekyll in your system, it is advisable to use `bundle exec jekyll serve`. This will ensure that specific version of jekyll from the gemfile of your project is being served on the host.
