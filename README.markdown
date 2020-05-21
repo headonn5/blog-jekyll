@@ -1,18 +1,15 @@
+
+# Introduction:
+Jekyll is an engine that is used to generate static websites, such as a static blog, portfolio, etc. Did you know GitHub Pages is developed using Jekyll. Therefore, it becomes the natural choice for most of the developers to power their github pages using Jekyll-built blogs/pages.
+
+# Set Up:
+It is written in ruby, so it can be easily installed in the system as a ruby gem.
+`gem install jekyll`
+However, to manage dependencies, we also install bundler using `gem install bundler`.
+
 ---
-layout: page
-title: About
-permalink: /about/
+**NOTE:** 
+You can combine the above two steps as gem install bundler jekyll
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
-
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Jekyll server can be run as simple as `jekyll serve`. However, if you have multiple versions of jekyll in your system, it is advisable to use `bundle exec jekyll serve`. This will ensure that specific version of jekyll from the gemfile of your project is being served on the host.
