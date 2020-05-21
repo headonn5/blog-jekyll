@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-lg-8">
+            <h1>{% if page.title %} {{ page.title }} {% else %} Open Page Gap {% endif %}</h1>
+                <p class="lead"><i class="fa fa-user"></i> by {% if page.author %} {{ page.author }} {% else %} Nishant {% endif %}</p>
+                <hr>
+                <p class="day"> Posted on {{ page.date | date: "%B %d, %Y" }}</p>
+                <hr>
+                
+                {{ page.content }}
+        </div>
+    </div>
+</div>
